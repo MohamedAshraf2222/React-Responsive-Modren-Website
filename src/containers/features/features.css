@@ -1,0 +1,103 @@
+.gpt3__features {
+  display: flex;
+  /* flex: ; */
+  position: relative;
+}
+.gpt3__features-heading {
+  flex: 0.9;
+}
+.gpt3__features-heading h2 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+    max-width: 430px;
+    margin-bottom: 34px;
+}
+.gpt3__features-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ff8a71;
+}
+.gpt3__features-container .gpt3__feature-container_title h2 {
+    font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+
+  margin-top: 10px;
+  color: #ffffff;
+}
+.gpt3__features-container .gpt3__feature-container_title{
+    max-width: 170px;
+}
+.gpt3__features-container .gpt3__feature-container_text {
+  margin: 0;
+  max-width: 334px;
+}
+.gpt3__features-container .gpt3__feature-container_text p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #81afdd;
+}
+.gpt3__features-container .gpt3__feature-container {
+  align-items: center;
+  margin-bottom: 50px ;
+}
+.gpt3__features-blur-ball{
+    top: -100px;
+    left: -400px;
+    position: absolute;
+    width: 750px;
+    height: 550px;
+    background: #002853;
+    filter: blur(180px);
+    z-index: -1;
+}
+@media screen and (max-width:1050px) {
+    
+.gpt3__features{
+    flex-direction: column;
+}
+.gpt3__features-heading h2{
+    max-width: 70%;
+}
+.gpt3__features-heading p{
+    margin: 36px 0;
+}
+}
+@media screen and (max-width:550px) {
+    .gpt3__features-heading h2{
+        font-size: 28px;
+        line-height: 38px;
+    }   
+    .gpt3__features-heading p{
+        font-size: 14px;
+        line-height: 28px;
+    }   
+.gpt3__features-container .gpt3__feature-container_text p {
+font-size: 12px;
+line-height: 20px;
+}
+.gpt3__features-container .gpt3__feature-container_title h2 {
+font-size: 16px;
+}
+}
+@media screen and (max-width:400px) {
+    .gpt3__features-heading h2{
+        max-width: 100%;
+    }   
+    .gpt3__features-container .gpt3__feature-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .gpt3__features-container .gpt3__feature-container_title h2 {
+        margin-bottom: 10px;        
+        }
+}
